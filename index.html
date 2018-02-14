@@ -29,7 +29,7 @@
 .pad{
 	padding:25px;
 }
-.parallax { 
+.parallax{ 
     /* The image used */
     background-image: url("notogitara2.jpg");
 
@@ -48,6 +48,12 @@
   background-size: 100% auto;
   max-width:100%;
 }
+
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+} 
 
 h4{
 	color:orange;
