@@ -26,9 +26,52 @@
 
 <style>
 
+ html {
+    font-family: Roboto semilight, sans-serif;
+    font-weight:300;
+  }
+
 .pad{
 	padding:25px;
 }
+
+h4{
+	color:orange;
+}
+
+iframe{
+	padding-bottom:15px;
+  height:70vh;
+     padding-top:1px;
+     padding-bottom:1.5px;
+   border-top :1px solid orange;
+   border-bottom :1px solid orange;
+   background-color:darkorange;
+}
+
+    .page-footer {
+        background-color: #ffa726;
+    }
+
+    img{
+   padding:1px;
+   border:1px solid orange;
+   background-color:darkorange;
+   margin-bottom:15px;
+    }
+
+body {
+  background: white;
+}
+
+.changeColor{
+  background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
+}
+
+    .changeColor:hover {
+   background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
+}
+
 .parallax{ 
     /* The image used */
     background-image: url("notogitara2.jpg");
@@ -47,21 +90,24 @@
   -o-background-size: 100% auto;
   background-size: 100% auto;
   max-width:100%;
+
+  z-index:999999;
 }
 
-h4{
-	color:orange;
-}
-
-iframe{
-	padding-bottom:15px;
-  height:70vh;
-}
-
-    .page-footer {
-        background-color: #ffa726;
-    }
 </style>
+
+<script>
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > Math.max(document.documentElement.clientHeight, window.innerHeight || 0)*5/6) {
+         $('body').addClass('changeColor')
+      }
+      if ($(this).scrollTop() < Math.max(document.documentElement.clientHeight, window.innerHeight || 0)*5/6) {
+         $('body').removeClass('changeColor')
+      }
+   });
+});
+</script>
 
     </head>
 
@@ -83,7 +129,7 @@ iframe{
 <div class="container">
 		<div class="row">
 			<div class="col s12 m6 2 offset-6">
-				<img src="b.jpg" width="100%">
+				<img src="szkola.jpg" class="z-depth-1" width="100%">
 			</div>
 			<div class="col s12 m6 2 offset-6">
 				Genimaio et quasin non rem videl moluptatur, temporecatur aut ommolupit laborum harunt, tendelles nobisse quibus, asped enimus dolupta volo cum vidi sitae. Eque cuptatest occuptas pedit fugia susdamet libus.
@@ -101,7 +147,7 @@ Ant delit, nostistotam alitaturiam hari simin cuptas secta aut aut estrum, seque
 	</div>
 </div>
 
-<iframe width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ogrodowa%2022a%2C%20Mysiad%C5%82o&zoom=17&key=AIzaSyDQPayZYSYDne4uSIIcOiO21RnXZ9w_BHw" allowfullscreen></iframe>
+<iframe width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ogrodowa%2022a%2C%20Mysiad%C5%82o&language=pl&zoom=17&key=AIzaSyDQPayZYSYDne4uSIIcOiO21RnXZ9w_BHw" allowfullscreen></iframe>
 
 <div class="container">
 		<div class="row">
@@ -114,15 +160,14 @@ Ant delit, nostistotam alitaturiam hari simin cuptas secta aut aut estrum, seque
 <div class="container">
 		<div class="row">
 			<div class="col s12 m6 2 offset-6">
-				<img src="b.jpg" width="100%">
+				<img src="piotr2.jpg" class="z-depth-1" width="100%">
 			</div>
 			<div class="col s12 m6 2 offset-6">
-				Genimaio et quasin non rem videl moluptatur, temporecatur aut ommolupit laborum harunt, tendelles nobisse quibus, asped enimus dolupta volo cum vidi sitae. Eque cuptatest occuptas pedit fugia susdamet libus.
-Nonsequidit, ut esed quiam quia que num re dolesci delesed eum nosamus, od quament ressuntur mil ipsae etur ape necae omnis nimaio. Et et a quas quae. Nem dictatur?
-Ant delit, nostistotam alitaturiam hari simin cuptas secta aut aut estrum, seque net pedi con et etusdaere maximusa sitatur repudae et lab ius mi, to dollor audi dendustia simintem voluptatiis earum faciis maio ere, optassitio voloriam faccatest omnimus accus et et facit que occat omni bea doluptatem. Equat quae qui alitati asperumet assitias prature ssedigenia vel ium est, si utes inihitatur?
-			</div>
+Nazywam się Piotr Nurzyński, Gitarą zajmuję się od 10 lat, a lekcji udzielam od 6. Doświadczenie wykułem przez lata tworzenia utworów, występowaniu na scenie ze swoim zespołem, ale również występami solo. Miałem przyjemność grać na jednej scenie z takimi artystami jak: Lombard czy Zbigniew Wodecki. Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Zajęcia odbywają się w bezstresowej atmosferze. Moimi ulubionymi rodzajami muzyki są: blues i rock, ale otwarty jestem na wszystkie gatunki. Udzielam lekcji na poziomie od podstawowego poprzez średnio-zaawansowany oraz dla chcących doszlifować swoje umiejętności do poziomu zaawansowanego. Mam możliwość udostępnienia gitar wraz z całym sprzętem, również dla osób leworęcznych.
+</div>
 	</div>
 </div>
+<br>
 
         <footer class="page-footer">
           <div class="container">
@@ -130,22 +175,22 @@ Ant delit, nostistotam alitaturiam hari simin cuptas secta aut aut estrum, seque
               <div class="col l6 s12">
                 <h5 class="white-text">Dojazd</h5>
                 <p class="grey-text text-lighten-4">Piotr Nurzyński<br>
-                	Topolowa xxx<br>
+                	Ogrodowa 22a<br>
                 	05-515, Mysiadło</p>
               </div>
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Kontakt</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">kontakt@notogitara.pl</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">No To Gitara (Facebook)</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">698780588</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">kontakt@noigitara.com.pl</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">No i Gitara (Facebook)</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">698 780 588</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2018 Piotr Nurzyński
+            © 2018 No i Gitara!
             <a class="grey-text text-lighten-4 right" href="#top">Początek</a>
             </div>
           </div>
