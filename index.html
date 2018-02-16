@@ -64,6 +64,13 @@ body {
   background: white;
 }
 
+blockquote{
+  margin: 20px 0;
+  padding-left: 2.5rem;
+  border-left: 5px solid orange; /* Just change the color value and that's it*/
+  display:none;
+}
+
 .changeColor{
   background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
 }
@@ -71,6 +78,22 @@ body {
     .changeColor:hover {
    background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
 }
+
+  @media (max-width: 600px) {
+
+.changeColor{
+  background: linear-gradient(to right, #fff3e0, #fff3e0 2%, white 10%,  white, white 90%, #fff3e0 98%, #fff3e0);
+}
+
+    .changeColor:hover {
+   background: linear-gradient(to right, #fff3e0, #fff3e0 2%, white 10%,  white, white 90%, #fff3e0 98%, #fff3e0);
+}
+
+blockquote{
+  display:flex;
+}
+  }
+
 
 .parallax{ 
     /* The image used */
@@ -119,9 +142,9 @@ $(function() {
 <div id="top" class="no_print">
 
 <div class="container">
-		<div class="row">
+		<div class="row foo-1">
 			<div class="col s6 m3 1 offset-m6">
-				<h4>O szkole</h4>
+				<h4><blockquote> O szkole </blockquote> <div class="hide-on-small-only"> O szkole </div></h4>
 			</div>
 	</div>
 </div>
@@ -129,12 +152,10 @@ $(function() {
 <div class="container">
 		<div class="row">
 			<div class="col s12 m6 2 offset-6">
-				<img src="szkola.jpg" class="z-depth-1" width="100%">
+				<img src="szkola.jpg" class="z-depth-1" id="1" width="100%">
 			</div>
 			<div class="col s12 m6 2 offset-6">
-				Genimaio et quasin non rem videl moluptatur, temporecatur aut ommolupit laborum harunt, tendelles nobisse quibus, asped enimus dolupta volo cum vidi sitae. Eque cuptatest occuptas pedit fugia susdamet libus.
-Nonsequidit, ut esed quiam quia que num re dolesci delesed eum nosamus, od quament ressuntur mil ipsae etur ape necae omnis nimaio. Et et a quas quae. Nem dictatur?
-Ant delit, nostistotam alitaturiam hari simin cuptas secta aut aut estrum, seque net pedi con et etusdaere maximusa sitatur repudae et lab ius mi, to dollor audi dendustia simintem voluptatiis earum faciis maio ere, optassitio voloriam faccatest omnimus accus et et facit que occat omni bea doluptatem. Equat quae qui alitati asperumet assitias prature ssedigenia vel ium est, si utes inihitatur?
+				Witam w szkole nauki gitary! Chciałbyś zostać Jimmy'im Hendrixem? Albo Slashem? A może Justinem Bieberem? Każdy artysta w życiu musiał zacząć od podstaw. Raz nauczony, mógł się dalej rozwijać w kierunkach ciekawszych, bardziej odpowiadających ambicjom, ale również komponować i tworzyć z innymi muzykami. Niezależnie od gatunku muzyki, w którym chciałbyś pozostać, oferuję spersonalizowany grafik i tok nauczania w bezstresowej atmosferze.<br><br>
 			</div>
 	</div>
 </div>
@@ -142,17 +163,19 @@ Ant delit, nostistotam alitaturiam hari simin cuptas secta aut aut estrum, seque
 <div class="container">
 		<div class="row">
 			<div class="col s6 m3 1 offset-m6">
-				<h4>Lokalizacja</h4>
+				<h4> <blockquote> Lokalizacja </blockquote> <div class="hide-on-small-only"> Lokalizacja </div></h4>
 			</div>
 	</div>
 </div>
 
 <iframe width="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Ogrodowa%2022a%2C%20Mysiad%C5%82o&language=pl&zoom=17&key=AIzaSyDQPayZYSYDne4uSIIcOiO21RnXZ9w_BHw" allowfullscreen></iframe>
+<br>
+<br>
 
 <div class="container">
 		<div class="row">
 			<div class="col s6 m3 1 offset-m6">
-				<h4>O mnie</h4>
+				<h4><blockquote> O mnie </blockquote> <div class="hide-on-small-only"> O mnie </div></h4>
 			</div>
 	</div>
 </div>
@@ -213,5 +236,16 @@ $(document).ready(function(){
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+      <script>
+// Changing the defaults
+window.sr = ScrollReveal({ reset: true });
+
+// Customizing a reveal set
+sr.reveal('.row', {opacity: 0.9,duration:1500});
+sr.reveal('.parallax', {opacity: 0.9,duration:3000});
+sr.reveal('iframe', {opacity: 0.9,duration:1500});
+</script>
     </body>
   </html>
