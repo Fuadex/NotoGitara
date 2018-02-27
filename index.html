@@ -20,7 +20,7 @@
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>No to Gitara! Szkoła Muzyczna.</title>
+      <title>No i Gitara! Szkoła Muzyczna.</title>
 
       <script src="jquery-3.2.1.min.js"></script>
 
@@ -31,12 +31,14 @@
     font-weight:300;
   }
 
+@media (min-width:600px){
 .pad{
-	padding:25px;
+	padding-left:25px;
+}
 }
 
 h4{
-	color:orange;
+	color:darkorange;
 }
 
 iframe{
@@ -44,8 +46,7 @@ iframe{
   height:70vh;
      padding-top:1px;
      padding-bottom:1.5px;
-   border-top :1px solid orange;
-   border-bottom :1px solid orange;
+   border-width:1px solid orange;
    background-color:darkorange;
 }
 
@@ -61,16 +62,17 @@ iframe{
     }
 
 body {
-  background: white;
+  background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
 }
 
 blockquote{
   margin: 20px 0;
   padding-left: 2.5rem;
-  border-left: 5px solid orange; /* Just change the color value and that's it*/
+  border-left: 5px solid darkorange; /* Just change the color value and that's it*/
   display:none;
 }
 
+/*
 .changeColor{
   background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
 }
@@ -78,9 +80,10 @@ blockquote{
     .changeColor:hover {
    background: linear-gradient(to right, #fff3e0, #fff3e0 5%, white 20%,  white, white 80%, #fff3e0 95%, #fff3e0);
 }
+*/
 
   @media (max-width: 600px) {
-
+/*
 .changeColor{
   background: linear-gradient(to right, #fff3e0, #fff3e0 2%, white 10%,  white, white 90%, #fff3e0 98%, #fff3e0);
 }
@@ -88,16 +91,20 @@ blockquote{
     .changeColor:hover {
    background: linear-gradient(to right, #fff3e0, #fff3e0 2%, white 10%,  white, white 90%, #fff3e0 98%, #fff3e0);
 }
+*/
+
+body {
+  background: linear-gradient(to right, #fff3e0, #fff3e0 2%, white 10%,  white, white 90%, #fff3e0 98%, #fff3e0);
+}
 
 blockquote{
   display:flex;
 }
   }
 
-
 .parallax{ 
     /* The image used */
-    background-image: url("notogitara2.jpg");
+    background-image: url("Asset 1.png");
 
     /* Set a specific height */
     height: 100vh; 
@@ -111,7 +118,7 @@ blockquote{
       -webkit-background-size: 100% auto;
   -moz-background-size: 100% auto;
   -o-background-size: 100% auto;
-  background-size: 100% auto;
+  background-size: 90% auto;
   max-width:100%;
 
   z-index:999999;
@@ -198,8 +205,8 @@ $(function() {
 
 <div class="container">
 		<div class="row foo-1">
-			<div class="col s12 m4 1 offset-m6">
-				<h4><blockquote> Szkoła </blockquote> <div class="hide-on-small-only"> O szkole </div></h4>
+			<div class="col s12 m6 1 offset-m6">
+				<h4><blockquote> Szkoła </blockquote> <div class="hide-on-small-only"><div class="pad"> Szkoła </div></div></h4>
 			</div>
 	</div>
 </div>
@@ -210,15 +217,17 @@ $(function() {
 				<img src="szkola.jpg" class="z-depth-1 hoverable" id="1" width="100%">
 			</div>
 			<div class="col s12 m6 2 offset-6">
-				Witam w szkole nauki gitary! Chciałbyś zostać Jimmy'im Hendrixem? Albo Slashem? A może Justinem Bieberem? Każdy artysta w życiu musiał zacząć od podstaw. Raz nauczony, mógł się dalej rozwijać w kierunkach ciekawszych, bardziej odpowiadających ambicjom, ale również komponować i tworzyć z innymi muzykami. Niezależnie od gatunku muzyki, w którym chciałbyś pozostać, oferuję spersonalizowany grafik i tok nauczania w bezstresowej atmosferze.<br><br>
+        <div class="pad">
+				Witam bardzo serdecznie! Zapraszam na zajęcia gry na gitarze. To miejsce dla osób początkujących czyli dla tych, którzy dopiero zaczynają swoją przygodę z instrumentem poprzez poziom średnio-zaawansowany oraz dla chcących doszlifować swoje umiejętności do poziomu zaawansowanego. Mam możliwość udostępnienia gitar wraz z całym sprzętem, również dla osób leworecznych. Zajęcia przebiegają w bezstresowej i przyjaznej atmosferze. Oferuję spersonalizowany grafik i tok nauczania, oraz gwarantuję osiagnięcie wyznaczonych celów.<br><br>
+      </div>
 			</div>
 	</div>
 </div>
 
 <div class="container">
 		<div class="row">
-			<div class="col s12 m4 1 offset-m6">
-				<h4> <blockquote> Lokalizacja </blockquote> <div class="hide-on-small-only"> Lokalizacja </div></h4>
+			<div class="col s12 m6 1 offset-m6">
+				<h4> <blockquote> Lokalizacja </blockquote> <div class="hide-on-small-only"><div class="pad"> Lokalizacja </div></div></h4>
 			</div>
 	</div>
 </div>
@@ -229,8 +238,8 @@ $(function() {
 
 <div class="container">
 		<div class="row">
-			<div class="col s12 m4 1 offset-m6">
-				<h4><blockquote> O mnie </blockquote> <div class="hide-on-small-only"> O mnie </div></h4>
+			<div class="col s12 m6 1 offset-m6">
+				<h4><blockquote> Założyciel </blockquote> <div class="hide-on-small-only"><div class="pad"> Założyciel </div></div></h4>
 			</div>
 	</div>
 </div>
@@ -241,7 +250,9 @@ $(function() {
 				<img src="piotr2.jpg" class="z-depth-1 hoverable" width="100%">
 			</div>
 			<div class="col s12 m6 2 offset-6">
-Nazywam się Piotr Nurzyński, Gitarą zajmuję się od 10 lat, a lekcji udzielam od 6. Doświadczenie wykułem przez lata tworzenia utworów, występowaniu na scenie ze swoim zespołem, ale również występami solo. Miałem przyjemność grać na jednej scenie z takimi artystami jak: Lombard czy Zbigniew Wodecki. Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Zajęcia odbywają się w bezstresowej atmosferze. Moimi ulubionymi rodzajami muzyki są: blues i rock, ale otwarty jestem na wszystkie gatunki. Udzielam lekcji na poziomie od podstawowego poprzez średnio-zaawansowany oraz dla chcących doszlifować swoje umiejętności do poziomu zaawansowanego. Mam możliwość udostępnienia gitar wraz z całym sprzętem, również dla osób leworęcznych.
+        <div class="pad">
+Nazywam się Piotr Nurzyński, Gitarą zajmuję się od 10 lat, a lekcji udzielam od 6. Doświadczenie wykułem przez lata tworzenia utworów, występowaniu na scenie ze swoim zespołem, ale również występami solo. Miałem przyjemność grać na jednej scenie z takimi artystami jak: Lombard czy Zbigniew Wodecki. Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Zajęcia odbywają się w bezstresowej atmosferze. Moimi ulubionymi rodzajami muzyki są: blues i rock, ale otwarty jestem na wszystkie gatunki. Udzielam lekcji na poziomie od podstawowego poprzez średnio-zaawansowany oraz dla chcących doszlifować swoje umiejętności do poziomu zaawansowanego. Mam możliwość udostępnienia gitar wraz z całym sprzętem, również dla osób leworęcznych. 
+</div>
 </div>
 	</div>
 </div>
@@ -252,8 +263,8 @@ Nazywam się Piotr Nurzyński, Gitarą zajmuję się od 10 lat, a lekcji udziela
 
 <div class="container">
     <div class="row">
-      <div class="col s12 m4 1 offset-m6">
-        <h4><blockquote> Przywitaj Się! </blockquote> <div class="hide-on-small-only"> Przywitaj Się! </div></h4>
+      <div class="col s12 m6 1 offset-m6">
+        <h4><blockquote> Przywitaj Się! </blockquote> <div class="hide-on-small-only"><div class="pad"> Przywitaj Się! </div></div></h4>
       </div>
   </div>
 </div>
@@ -269,7 +280,7 @@ Nazywam się Piotr Nurzyński, Gitarą zajmuję się od 10 lat, a lekcji udziela
           <input id="email" type="email" data-error="Potrzebny adres email!" class="validate">
           <label for="email">Email</label>
         </div>
-      </div>
+      </div><!--
                   <div class="row">
         <div class="col s6">
             <input placeholder="Data" type="text" class="datepicker">
@@ -277,11 +288,11 @@ Nazywam się Piotr Nurzyński, Gitarą zajmuję się od 10 lat, a lekcji udziela
         <div class="col s6">
             <input placeholder="Godzina" type="text" class="timepicker">
       </div>
-    </div>
+    </div>-->
       <div class="row">
         <div class="input-field col s12">
            <textarea id="textarea1" class="materialize-textarea validate" data-length="500"></textarea>
-          <label for="text">Tekst</label>
+          <label for="text">Wiadomość</label>
         </div>
       </div>
       <div class="col s12 m4 1 offset-m6">
@@ -344,7 +355,7 @@ window.sr = ScrollReveal({ reset: true });
 // Customizing a reveal set
 sr.reveal('.row', {opacity: 0.9,duration:1500});
 sr.reveal('.parallax', {opacity: 0,duration:3000});
-sr.reveal('iframe', {opacity: 0.9,duration:1500});
+sr.reveal('iframe', {opacity: 0,duration:1500});
 </script>
     </body>
   </html>
