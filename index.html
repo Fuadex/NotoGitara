@@ -391,7 +391,7 @@ $(function(){
 
   $('#szkola').on('click', function(){
     $('#szkola').fadeOut(500, function(){
-      $('#szkola').fadeIn(500).attr("src","piotrv2.jpg").prop("id","szkola2");
+      $('#szkola').attr("src","piotrv2.jpg").prop("id","szkola2"); { $(this).fadeIn(500)};
     });
   });
 });
@@ -399,7 +399,7 @@ $(function(){
 $(function(){
   $('#szkola').on('click', function(){
     $('#szkola2').fadeOut(500, function(){
-      $('#szkola2').fadeIn(500).attr("src","szkola.jpg").prop("id","szkola");
+      $('#szkola2').attr("src","szkola.jpg").prop("id","szkola"); { $(this).fadeIn(500)};
     });
   });
 });
