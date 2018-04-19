@@ -408,7 +408,7 @@ $(function(){
 
   $('#Omnie').on('click', function(){
     $('#Omnie').fadeOut(500, function(){
-      $('#Omnie').fadeIn(500).attr("src","piotrv3.jpg").prop("id","Omnie2");
+      $('#Omnie').attr("src","piotrv3.jpg").prop("id","Omnie2").fadeIn(500);
     });
   });
 });
@@ -416,7 +416,7 @@ $(function(){
 $(function(){
   $('#Omnie').on('click', function(){
     $('#Omnie2').fadeOut(500, function(){
-      $('#Omnie2').fadeIn(500).attr("src","piotr2.jpg").prop("id","Omnie");
+      $('#Omnie2').attr("src","piotr2.jpg").prop("id","Omnie").fadeIn(500);
     });
   });
 });
