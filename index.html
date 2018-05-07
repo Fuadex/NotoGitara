@@ -33,11 +33,11 @@ font-style: regular;
 font-weight: 400;
 font-size:16px;
 color:#333333;
-  -webkit-text-stroke-width: 0.05px;
+/*  -webkit-text-stroke-width: 0.05px;
   -webkit-text-stroke-color: white;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
 text-rendering: optimizeLegibility !important;
--webkit-font-smoothing: antialiased !important;
+-webkit-font-smoothing: antialiased !important;*/
   }
 
 @media (min-width:600px){
@@ -456,6 +456,8 @@ window.sr = ScrollReveal({ reset: true });
 sr.reveal('.row', {opacity: 0.9,duration:1500});
 sr.reveal('.parallax', {opacity: 0,duration:3000});
 sr.reveal('iframe', {opacity: 0,duration:1500});
+sr.reveal('h4', {opacity: 0,duration:1500});
+sr.reveal('.white-text', {origin:'right', distance: '200px',duration:3000});
 </script>
     </body>
   </html>
