@@ -38,6 +38,8 @@
       <meta name="description" content="Zapraszam na zajęcia gry gitarze. To miejsce dla osób początkujących, zaczynających swoją przygodę z gitarą, średniozaawansowanych, jak również pragnących doszlifować swoje umiejętności do poziomu zaawansowanego." />
       <meta name="google-site-verification" content="y4gnTD99uw0gzr3Etu6wS38MUgp-shJWmbWNOuKB8Mg" />
 
+      <link rel="icon" href="favicon.ico">
+
 <style>
 
  html {
@@ -175,12 +177,31 @@ blockquote{
     display:block;
    }
 
-  @media (max-width: 768px) {
+.cont{
+  height:400px;
+}
+
+.cont2{
+  height:400px;
+}
+
+  @media (max-width: 1200px) {
 
        #inherit{
     display:initial;
    }
  }
+
+ @media (max-width:480px){
+
+   .cont{
+  height:60vw;
+}
+
+.cont2{
+  height:66vw;
+ }
+}
 
 
 /*       p{
@@ -324,7 +345,9 @@ $(window).scroll(function() {
 <div class="container">
 		<div class="row">
 			<div class="col s12 m6 2 offset-6 rev">
+        <div class="cont">
 				<img src="szkola.jpg" id="szkola" class="z-depth-1 hoverable" id="1" width="100%">
+      </div>
 			</div>
 			<div class="col s12 m6 2 offset-6 rev">
         <div class="pad">
@@ -365,7 +388,9 @@ Oferuję spersonalizowany grafik i tok nauczania, oraz gwarantuję osiągnięcie
 <div class="container">
 		<div class="row">
 			<div class="col s12 m6 2 offset-6">
+        <div class="cont2">
 				<img src="piotrrr.jpg" id="Omnie" class="z-depth-1 hoverable" width="100%">
+      </div>
 			</div>
 			<div class="col s12 m6 2 offset-6">
         <div class="pad">
@@ -418,6 +443,7 @@ Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości
   </div>
 </div>
 </div>
+<br>
 
         <footer class="page-footer">
           <div class="container">
