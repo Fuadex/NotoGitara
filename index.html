@@ -299,7 +299,7 @@ $(window).scroll(function() {
 <br><br>
 		
 
-<div class="container">
+<div id="content" class="container">
 		<div class="row foo-1">
 			<div class="col s12 m6 1 offset-m6">
 				<h4><blockquote> Zajęcia </blockquote> <div class="hide-on-small-only"><div class="pad"> Zajęcia </div></div></h4>
@@ -447,6 +447,11 @@ $(document).ready(function(){
     });
 });
 
+$("#parallax").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content").offset().top
+    }, 1000);
+});
 
 $(function(){
 
