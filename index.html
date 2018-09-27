@@ -171,8 +171,21 @@ blockquote{
 }
 }
 
+   p{
+    display:block;
+   }
 
   @media (max-width: 768px) {
+
+       #inherit{
+    display:initial;
+   }
+ }
+
+
+/*       p{
+    display:inline;
+   }*/
 
 .parallax{ 
     /* The image used */
@@ -226,6 +239,7 @@ blockquote{
    #szkola, #Omnie{
     margin-bottom:25px;
    }
+
 </style>
 
 <script>
@@ -355,12 +369,11 @@ Oferuję spersonalizowany grafik i tok nauczania, oraz gwarantuję osiągnięcie
 			</div>
 			<div class="col s12 m6 2 offset-6">
         <div class="pad">
-Nazywam się Piotr Nurzyński.<br><br>
-Gram na gitarze od 11 lat a lekcji udzielam od 6.<br>
-Mam wiele doświadczenia w graniu wielu rodzajów muzyki oraz tworzeniu utworów i występowaniu na scenie.
-Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości, kreatywności i pasji.<br><br>
+<p>Nazywam się Piotr Nurzyński.</p>
+<p id="inherit">Gram na gitarze od 11 lat a lekcji udzielam od 6.</p> <p id="inherit">Mam wiele doświadczenia w graniu wielu rodzajów muzyki oraz tworzeniu utworów i występowaniu na scenie.
+Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości, kreatywności i pasji.</p>
 
-Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Moimi ulubionymi rodzajami muzyki są blues i rock, ale otwarty jestem na wszystkie gatunki.<br><br>
+<p>Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Moimi ulubionymi rodzajami muzyki są blues i rock, ale otwarty jestem na wszystkie gatunki.</p><br><br>
 </div>
 </div>
 	</div>
@@ -379,7 +392,7 @@ Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie ind
           <input id="first_name" type="text" class="validate hoverable">
           <label for="first_name">Imię</label>
         </div>
-        <div class="input-field col s5">
+        <div class="input-field col s4">
           <input id="email" type="email" data-error="Potrzebny adres email!" class="validate">
           <label for="email">Email</label>
         </div>
@@ -393,7 +406,7 @@ Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie ind
       </div>
     </div>-->
       <div class="row">
-        <div class="input-field col s12">
+        <div class="input-field col s11">
            <textarea id="textarea1" class="materialize-textarea validate" data-length="500"></textarea>
           <label for="text">Wiadomość</label>
         </div>
