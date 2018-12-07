@@ -261,6 +261,50 @@ blockquote{
     margin-bottom:25px;
    }
 
+   body,html  {
+  background-color: #000;
+  width: 100%;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.scroll-downs {
+  position: absolute;
+  top: 85vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :0px;
+  height: 55px;
+}
+.mousey {
+  width: 4px;
+  padding: 5px 10px;
+  height: 35px;
+  border: 2px solid rgba(255,105,0,0.5);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+	margin-left:1px;
+  width: 1.75px;
+  height: 8px;
+  border-radius: 25%;
+  background-color: darkorange;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
+}
+
 </style>
 
 <script>
@@ -322,6 +366,12 @@ $(window).scroll(function() {
     'opacity': 1 - (($(this).scrollTop()) / 300)
   });
 });
+
+$(window).scroll(function() {
+  $(".mousey").css({
+    'opacity': 1 - (($(this).scrollTop()) / 300)
+  });
+});
 </script>
 		
     </head>
@@ -329,7 +379,13 @@ $(window).scroll(function() {
     <body>
 
 <div id="top" class="no_print"></div>
-<div class="parallax" id="parallax"></div>
+<div class="parallax" id="parallax">
+</div>
+	<div class="scroll-downs">
+  <div class="mousey">
+    <div class="scroller"></div>
+  </div>
+</div>
 
 <br><br>
 		
@@ -405,7 +461,7 @@ Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości
 </div>
 <br>
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
       <div class="col s12 m12 1">
         <h4><blockquote> Przywitaj Się! </blockquote> <div class="hide-on-small-only"><div class="pad"> Przywitaj Się! </div></div></h4>
@@ -421,7 +477,11 @@ Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości
           <input id="email" type="email" data-error="Potrzebny adres email!" class="validate">
           <label for="email">Email</label>
         </div>
-      </div><!--
+      </div>
+ -->
+<!-- This here is obsolete-->
+
+      <!--
                   <div class="row">
         <div class="col s6">
             <input placeholder="Data" type="text" class="datepicker">
@@ -430,7 +490,10 @@ Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości
             <input placeholder="Godzina" type="text" class="timepicker">
       </div>
     </div>-->
-      <div class="row">
+
+<!-- End obsolete -->
+
+<!--       <div class="row">
         <div class="input-field col s11">
            <textarea id="textarea1" class="materialize-textarea validate" data-length="500"></textarea>
           <label for="text">Wiadomość</label>
@@ -443,7 +506,7 @@ Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości
   </div>
 </div>
 </div>
-<br>
+<br> -->
 
         <footer class="page-footer">
           <div class="container">
