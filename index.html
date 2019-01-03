@@ -37,6 +37,7 @@
 
       <meta name="description" content="Zapraszam na zajęcia gry gitarze. To miejsce dla osób początkujących, zaczynających swoją przygodę z gitarą, średniozaawansowanych, jak również pragnących doszlifować swoje umiejętności do poziomu zaawansowanego." />
       <meta name="google-site-verification" content="y4gnTD99uw0gzr3Etu6wS38MUgp-shJWmbWNOuKB8Mg" />
+<link rel="stylesheet" href="https://use.typekit.net/pxi1jxn.css">
 
       <link rel="icon" href="favicon.ico">
 
@@ -62,7 +63,10 @@ text-rendering: optimizeLegibility !important;
 }
 
 h4{
+  font-family:verveine, sans-serif;
+  font-size:48px;
 	color:darkorange;
+  margin-bottom:0.5em;
 }
 
 iframe{
@@ -117,6 +121,7 @@ blockquote{
 }
 
 .pad{
+  padding-top:1em;
   padding-left:10px;
 }
 
@@ -175,6 +180,7 @@ blockquote{
 
    p{
     display:block;
+    margin-bottom: 1.5em;
    }
 
 .cont{
@@ -187,7 +193,7 @@ blockquote{
 
   @media (max-width: 1200px) {
 
-       #inherit{
+       .inherit{
     display:initial;
    }
  }
@@ -349,7 +355,7 @@ a:focus:before {
 
 </style>
 
-<script>
+<!-- <script>
 
     $( document ).ready(function() {
   $('.datepicker').pickadate({
@@ -381,7 +387,7 @@ a:focus:before {
   });
   });
 
-</script>
+</script> -->
 
 <script>
 $( document ).ready(function(){
@@ -444,22 +450,21 @@ $(window).scroll(function() {
 		<div class="row">
 			<div class="col s12 m6 2 offset-6 rev">
         <div class="cont2">
-				<img src="szkola1.jpg" id="szkola" class="z-depth-1 hoverable" id="1" width="100%">
+				<img src="szkola1.jpg" id="szkola" class="z-depth-1 hoverable" id="1" width="100%" style="margin:0px 10px">
       </div>
 			</div>
 			<div class="col s12 m6 2 offset-6 rev">
         <div class="pad">
 
-Zapraszam na zajęcia gry gitarze. To miejsce dla osób początkujących, zaczynających swoją przygodę z gitarą, średniozaawansowanych, jak również pragnących doszlifować swoje umiejętności do poziomu zaawansowanego.<br><br>
+<p style="margin-top:0;">
+Zapraszam na zajęcia z gry na gitarze. To miejsce dla osób początkujących, zaczynających swoją przygodę z gitarą, średnio zaawansowanych, jak również pragnących doszlifować swoje umiejętności do poziomu zaawansowanego.</p>
 
-Oferuję naukę gry na gitarze klasycznej, akustycznej oraz elektrycznej. 
-Do zajęć może przystąpić każdy niezależnie od wieku. Zapisy trwają przez cały rok kalendarzowy. Czas trwania zajęć to godzina zegarowa – 60 minut. Możliwe są również zajęcia półtoragodzinne – 90 minut oraz dwugodzinne – 120 minut.<br><br>
+<p>Oferuję naukę gry na gitarze klasycznej, akustycznej oraz elektrycznej.<br> 
+Do zajęć może przystąpić każdy niezależnie od wieku. <br>
+Zapisy trwają przez cały rok kalendarzowy. <br>
+Czas trwania zajęć to godzina zegarowa – 60 minut. Możliwe są również zajęcia półtoragodzinne – 90 minut oraz dwugodzinne – 120 minut.</p>
 
-Zajęcia prowadzone są w trybie indywidualnym. Istnieje również możliwość utworzenia grup.
-Mogę udostępnić gitarę wraz z całym sprzętem, również dla osób leworęcznych.
-Oferuję spersonalizowany grafik i tok nauczania, oraz gwarantuję osiągnięcie wyznaczonych celów.<br><br>
-
-
+<p>Zajęcia prowadzone są w trybie indywidualnym. Istnieje również możliwość utworzenia grup.<br>Mogę udostępnić gitarę wraz z całym sprzętem, również dla osób leworęcznych. Oferuję spersonalizowany grafik i tok nauczania oraz gwarantuję osiągnięcie wyznaczonych celów.</p>
       </div>
 			</div>
 	</div>
@@ -495,11 +500,15 @@ Oferuję spersonalizowany grafik i tok nauczania, oraz gwarantuję osiągnięcie
 			</div>
 			<div class="col s12 m6 2 offset-6">
         <div class="pad">
-<p>Nazywam się Piotr Nurzyński.</p>
-<p id="inherit">Gram na gitarze od 11 lat a lekcji udzielam od 6.</p> <p id="inherit">Mam wiele doświadczenia w graniu wielu rodzajów muzyki oraz tworzeniu utworów i występowaniu na scenie.
-Staram się aby lekcje gry były podróżą po świecie muzyki, pełną radości, kreatywności i pasji.</p>
+<p class="inherit">
+  Nazywam się Piotr Nurzyński. </p>
 
-<p>Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Moimi ulubionymi rodzajami muzyki są blues i rock, ale otwarty jestem na wszystkie gatunki.</p><br><br>
+<p class="inherit">Gram na gitarze od 11 lat a lekcji udzielam od 6.</p>
+
+<p>Mam wiele doświadczenia w graniu wielu rodzajów muzyki oraz tworzeniu utworów i występowaniu na scenie. Staram się, aby lekcje gry były podróżą po świecie muzyki, pełną radości, kreatywności i pasji.</p>
+
+<p>Jestem cierpliwy i otwarty na potrzeby uczniów, bardzo ważne jest dla mnie indywidualne podejście do każdego gitarzysty. Moimi ulubionymi rodzajami muzyki są blues i rock, ale otwarty jestem na wszystkie gatunki.</p>
+</p>
 </div>
 </div>
 	</div>
@@ -674,7 +683,7 @@ $(function(){
 
       <script>
 // Changing the defaults
-window.sr = ScrollReveal({ reset: true });
+window.sr = ScrollReveal({ reset: false });
 
 // Customizing a reveal set
 sr.reveal('.row', {opacity: 0.9,duration:1500});
